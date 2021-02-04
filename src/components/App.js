@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Quotes from './Quotes'
+import Form from './Form'
 import './App.css'
 
 class App extends Component {
@@ -36,6 +37,12 @@ class App extends Component {
     }
   }
 
+  addQuote = (newQuote) => {
+    this.setState({
+      quotes: [...this.state.quotes, newQuote]
+    })
+  }
+
   deleteQuote = (id) => {
     const filteredQuotes = this.state.quotes.filter(quote => quote.id != id)
     this.setState({ quotes: filteredQuotes })
@@ -49,6 +56,7 @@ class App extends Component {
           <h1>Breaking Bad Quotes Collection</h1>
         </header>
         <main>
+          <Form addQuote={this.addQuote}/>
           <Quotes quotes={this.state.quotes} deleteQuote={this.deleteQuote}/>
         </main>
       </>
