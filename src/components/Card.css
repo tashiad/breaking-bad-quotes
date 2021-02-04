@@ -1,0 +1,19 @@
+.card {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 3%;
+}
+
+.card-delete {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.card-delete:hover {
+  box-shadow: 3px 3px 3px black;
+}
+
+.card-author {
+  font-style: italic;
+}

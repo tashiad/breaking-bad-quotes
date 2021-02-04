@@ -2,20 +2,21 @@ import React from 'react'
 import Card from './Card'
 import './Quotes.css'
 
-const Quotes = ({ quotes }) => {
+const Quotes = ({ quotes, deleteQuote }) => {
   const quoteCards = quotes.map((item, index) => {
     return (
       <Card
         key={index}
-        id={Date.now()}
+        id={item.id}
         quote={item.quote}
         author={item.author}
+        deleteQuote={deleteQuote}
       />
     )
   })
 
   return (
-    <section>
+    <section className="quotes">
       {quoteCards}
     </section>
   )
