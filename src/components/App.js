@@ -56,7 +56,10 @@ class App extends Component {
           <h1>Breaking Bad Quotes Collection</h1>
         </header>
         <main>
+          <h2>Add a new quote:</h2>
           <Form addQuote={this.addQuote}/>
+          <hr/>
+          <h2>All Quotes</h2>
           <Quotes quotes={this.state.quotes} deleteQuote={this.deleteQuote}/>
         </main>
       </>

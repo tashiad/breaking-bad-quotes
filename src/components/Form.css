@@ -1,0 +1,25 @@
+form {
+  margin-bottom: 3%;
+}
+
+input {
+  margin: 0 5px 0 5px;
+  padding: 1%;
+  border: 1px solid black;
+}
+
+.form-submit {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: none;
+  width: 10%;
+  margin-left: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  color: black;
+  background-color: white;
+}
