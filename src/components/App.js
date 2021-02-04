@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   deleteQuote = (id) => {
-    const filteredQuotes = this.state.quotes.filter(quote => quote.id != id)
+    const filteredQuotes = this.state.quotes.filter(quote => quote.id !== id)
     this.setState({ quotes: filteredQuotes })
   }
 

@@ -45,7 +45,7 @@ class Form extends Component {
           value={this.state.author}
           onChange={this.handleChange}
         />
-        <button onSubmit={this.handleSubmit}>SUBMIT</button>
+        <button onClick={this.handleSubmit}>SUBMIT</button>
       </form>
     )
   }
